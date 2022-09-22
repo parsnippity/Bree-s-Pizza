@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brianne Siemsen">
+    <meta name="description" content="Come order a tasty pizza and drink!">
+    <title>Bree's Pizza</title>
+    <meta property="og:description" content="Come order a tasty pizza and drink!">
+    <meta property="og:title" content="Bree's Pizza">
+</head>
+<body>
+    <form>
+        <fieldset id="user">
+            <legend for="user">User Information</legend>
+            <ul>
+                <li>
+                    <label for="userName">User Name: </label>
+                    <input type="text" id="userName" name="userName" required>
+                </li>
+                <li>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="drink">
+            <legend for="drink">What drink do you want?</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="coke" name="drinkType">
+                    <label for="coke">Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="dietCoke" name="drinkType">
+                    <label for="dietCoke">Diet Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="sprite" name="drinkType">
+                    <label for="sprite">Sprite</label>
+                </li>
+                <li>
+                    <input type="radio" id="lemonade" name="drinkType">
+                    <label for="lemonade">Lemonade</label>
+                </li>
+                <li>
+                    <input type="radio" id="rootBeer" name="drinkType">
+                    <label for="rootBeer">Root beer</label>
+                </li>
+                <li>
+                    <input type="radio" id="water" name="drinkType" checked>
+                    <label for="water">Water</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="pizza">
+            <legend for="pizza">What pizza toppings do you want?</legend>
+            <ul>
+                <li>
+                    <input id="plain" type="checkbox" name="plain" checked>
+                    <label for="plain">Plain</label>
+                </li>
+                <li>
+                    <input id="pepperoni" type="checkbox" name="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </li>
+                <li>
+                    <input id="sausage" type="checkbox" name="sausage">
+                    <label for="sausage">Sausage</label>
+                </li>
+                <li>
+                    <input id="bacon" type="checkbox" name="bacon">
+                    <label for="bacon">Bacon</label>
+                </li>
+                <li>
+                    <input id="mushroom" type="checkbox" name="mushroom">
+                    <label for="mushroom">Mushroom</label>
+                </li>
+                <li>
+                    <input id="greenPepper" type="checkbox" name="greenPepper">
+                    <label for="greenPepper">Green peppers</label>
+                </li>
+                <li>
+                    <input id="olive" type="checkbox" name="olive">
+                    <label for="olive">Olives</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="special">
+            <legend for="special">Special instructions</legend>
+            <ul>
+                <li>
+                    <label for="specialBox">Special instructions:</label>
+                    <br>
+                    <textarea id="specialBox" name="specialBox" rows="5"></textarea>
+                </li>
+            </ul>
+            <button type="submit" name="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
